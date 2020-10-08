@@ -7,7 +7,7 @@ export const ProductSchema = new Schema({
     },
     description: {
         type: String,
-        required: 'Enter a product name'
+        required: 'Enter a product description'
     },
     category: {
         type: String
