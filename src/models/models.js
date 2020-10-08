@@ -1,10 +1,13 @@
 import mongoose from 'mongoose';
-const SCHEMA = mongoose.Schema({
-    name: {
-        type: String
+const Schema = mongoose.Schema;
+export const ProductSchema = new Schema({
+    name: { 
+        type: String,
+        required: 'Enter a product name'
     },
     description: {
-        type: String
+        type: String,
+        required: 'Enter a product name'
     },
     category: {
         type: String
@@ -14,6 +17,6 @@ const SCHEMA = mongoose.Schema({
     },
     created_date:  {
         type: Date,
-        default: Date.now()
+        default: Date.now
     }
 })
